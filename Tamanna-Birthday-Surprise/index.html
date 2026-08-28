@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#170b1d">
+  <title>For Tamanna — A Birthday Surprise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="stars"></div>
+  <div class="glow glow-a"></div>
+  <div class="glow glow-b"></div>
+
+  <main id="app">
+    <!-- 1. Birthday opening -->
+    <section class="screen active" data-screen="0">
+      <div class="eyebrow">make a wish...</div>
+      <h1 class="hero-title">Happy<br>Birthday</h1>
+      <div class="gold-line"></div>
+      <p class="tiny">A little surprise, made just for you.</p>
+      <button class="continue-btn" data-next>
+        <span>Tap to begin</span> <b>♥</b>
+      </button>
+    </section>
+
+    <!-- 2. Cake -->
+    <section class="screen" data-screen="1">
+      <p class="eyebrow">First things first 🎂</p>
+      <div class="cake-wrap" aria-label="Birthday cake">
+        <div class="flame"></div>
+        <div class="candle"></div>
+        <div class="cake">
+          <div class="icing"></div>
+          <div class="cake-layer top"></div>
+          <div class="cake-layer mid"></div>
+          <div class="cake-layer bottom"></div>
+          <div class="plate"></div>
+        </div>
+      </div>
+      <h2 class="script-title">Happy Birthday, Tamanna!</h2>
+      <p class="tiny">tap anywhere to continue</p>
+    </section>
+
+    <!-- 3. Reasons -->
+    <section class="screen" data-screen="2">
+      <p class="eyebrow">Just a few reasons...</p>
+      <div class="reasons">
+        <article class="reason">
+          <span>REASON NO. 1 💌</span>
+          <strong>Nobody listens the way you do 🩵</strong>
+          <i>✦</i>
+        </article>
+        <article class="reason">
+          <span>REASON NO. 2 🌷</span>
+          <strong>You make bad days feel lighter 😊</strong>
+          <i>✦</i>
+        </article>
+        <article class="reason">
+          <span>REASON NO. 3 🎀</span>
+          <strong>You make normal days feel special ❤️</strong>
+          <i>✦</i>
+        </article>
+        <article class="reason">
+          <span>REASON NO. 4 ✨</span>
+          <strong>You always know what to say</strong>
+          <i>✦</i>
+        </article>
+        <article class="reason">
+          <span>REASON NO. 5 💚</span>
+          <strong>You believed in me before I did</strong>
+          <i>✦</i>
+        </article>
+      </div>
+      <p class="more-reasons">...and a thousand more reasons 💛</p>
+      <p class="tiny">tap anywhere to continue</p>
+    </section>
+
+    <!-- 4. Envelope -->
+    <section class="screen" data-screen="3">
+      <p class="eyebrow">One last thing, Tamanna...</p>
+      <p class="sub">Ashahid wrote you a letter.</p>
+
+      <button class="envelope" id="openLetter" aria-label="Open letter">
+        <div class="env-back"></div>
+        <div class="paper"></div>
+        <div class="env-front"></div>
+        <div class="flap"></div>
+        <div class="seal">♥</div>
+      </button>
+
+      <p class="tiny">tap the envelope</p>
+    </section>
+
+    <!-- 5. Letter -->
+    <section class="screen" data-screen="4">
+      <div class="letter">
+        <div class="letter-top">Dear Tamanna,</div>
+        <div class="letter-divider"></div>
+        <p><em>Happy Birthday ❤️ Baby</em></p>
+        <p>
+          I still don't know how someone like you came into my life,
+          but I'm really thankful for it. I hope this year gives you
+          peace, good health, endless smiles and everything your heart
+          quietly wishes for.
+        </p>
+        <p>
+          You deserve beautiful moments, people who choose you,
+          and a life that feels as warm as your smile.
+        </p>
+        <p>
+          Thank you for being you. And whenever life feels a little heavy,
+          I hope you remember that someone is always wishing the best for you.
+        </p>
+        <div class="signature">With all my love,<br><b>Ashahid</b> ❤️</div>
+        <div class="letter-heart">☺️</div>
+      </div>
+      <button class="continue-btn final-btn" data-next>There’s one more thing ✨</button>
+    </section>
+
+    <!-- 6. Final -->
+    <section class="screen" data-screen="5">
+      <div class="final-hearts">♥ &nbsp; ♥ &nbsp; ♥</div>
+      <p class="eyebrow">for the most special person</p>
+      <h2 class="final-title">Happy Birthday,<br><span>Tamanna!</span></h2>
+      <div class="gold-line"></div>
+      <p class="final-message">
+        May your smile stay bright,<br>
+        your heart stay soft,<br>
+        and your dreams come true. ✨
+      </p>
+      <div class="from">With all my love, Ashahid</div>
+      <button class="replay" id="replay">↻ Replay surprise</button>
+    </section>
+  </main>
+
+  <div id="toast" class="toast">Made with love ❤️</div>
+  <script src="script.js"></script>
+</body>
+</html>
